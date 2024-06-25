@@ -1,0 +1,15 @@
+version: '3.1'
+services:
+  app:
+    build:
+      context: .
+    container_name: fast_api_nltk
+    command: [ "docker/app.sh" ]
+    ports:
+      - "8000:8000"
+    networks:
+      - api_ntlk
+
+networks:
+  api_ntlk:
+    driver: bridge
