@@ -1,6 +1,6 @@
 import uvicorn
 from fastapi import FastAPI
-from src.nltk.router import router as router_ntlk
+from src.scr_nltk.router import router as router_ntlk
 
 app = FastAPI(title="FastAPI with NLTK", version="0.1.0")
 
